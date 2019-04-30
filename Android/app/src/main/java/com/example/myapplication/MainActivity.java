@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     session.setConfig(config);
                     session.connect(30*1000);   // making a connection with timeout.
                     System.out.println("connected...");
-                    String command = "cd /home/zemotacqy/remoter && javac -cp \".:./jars/jsch.jar\" RemoTer.java && java -cp \".:./jars/jsch.jar\" RemoTer " + msg;
+                    String command = "cd /home/zemotacqy/remoter && java -cp \".:./jars/jsch.jar\" RemoTer " + msg;
                     final Channel channel=session.openChannel("exec");
                     ((ChannelExec)channel).setCommand(command);
                     // Sets true Terminal Not the virtual Terminal
