@@ -1,4 +1,4 @@
-# remoTer
+# Commander
 Access your local system's Terminal(may be behind a NAT) through your android device in Real time.
 ___
 
