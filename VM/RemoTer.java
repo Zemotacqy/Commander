@@ -60,8 +60,8 @@ public class RemoTer {
             config_io = new FileInputStream("./config.properties");
             Properties props = new Properties();
             props.load(config_io);
-            VM_username = props.getProperty("VM_username");
-            VM_password = props.getProperty("VM_password");
+            VM_username = props.getProperty("local_system_username");
+            VM_password = props.getProperty("local_system_password");
             VM_reverse_ssh_port = Integer.parseInt(props.getProperty("VM_reverse_ssh_port"));
         } catch(Exception e) {
             System.out.println("\nERROR: Cannot Read Config File.\n");
